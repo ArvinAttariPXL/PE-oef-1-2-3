@@ -1,0 +1,225 @@
+/*
+    naam:
+*/
+
+/*
+Hint: 
+    (1) Omzetten naar hoofdletters:
+            text-transform: uppercase;
+    (2) Schaduw in figcaption
+            text-shadow: 2px 2px 2px black;
+    (3) Eerste 3 lijnen tonen van de paragrafen
+            line-height:1em;
+	        height:3em;
+    (4) Herschaling van de figuren 
+            aspect-ratio: 400 / 225;
+            object-fit:cover;
+*/
+*{
+    font-family: Serif;
+}
+main header{
+    width: 1200px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: orange;
+    width: 100%;
+}
+ul{
+    position: fixed;
+    list-style: none;
+    top:20px;
+    right:20px;
+    border: 1px orange solid;
+    padding: 0;
+    border-radius: 1rem;
+    width: 250px;
+    z-index: 1;
+    background-color: white;
+}
+.Eerste{
+    background-color: orange;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+}
+.Eerste a{
+    color: white;
+    text-transform: uppercase;
+}
+nav{
+
+}
+ul img{
+    margin-left: 10px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 1.4rem;
+
+}
+ul li a span{
+    display: none;
+}
+ul img{
+    width: 20px;
+}
+ul input{
+    width: 100px;
+    border-radius: 1rem;
+}
+header{
+    text-transform: uppercase;
+    border-bottom: orange 1px solid;
+}
+header h2{
+    border-left: orange 10px solid;
+    padding-left: 0.5rem;
+    font-size: 2em;
+}
+header h1{
+    font-size: 3em;
+}
+main img{
+    border-radius: 1rem;
+}
+figcaption{
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+figure{
+    position: relative;
+}
+.nummer1{
+    width: 59%;
+    float: left;
+}
+.nummer2{
+    width: 40%;
+    float: left;
+
+    aspect-ratio: 400 / 225;
+    object-fit:cover;
+}
+main img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nummer3{
+    width: 40%;
+    float: left;
+
+    aspect-ratio: 400 / 225;
+    object-fit:cover;
+}
+.laaste{
+    width: calc(94%/3);
+    float: left;
+    margin: 1%;
+
+
+}
+.laaste img{
+    aspect-ratio: 400 / 225;
+    object-fit:cover;
+}
+.center{
+    width: 100%;
+
+}
+.nummer1 img{
+    width: 40%;
+    float: left;
+}
+@media screen and (max-width: 1600px) {
+    footer{
+        display: none;
+    }
+
+    body, nav{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav{
+        overflow: auto;
+        margin-left: 0;
+        height: auto;
+        width: auto;
+    }
+    ul{
+        border: none;
+        top: 0;
+        left: 0;
+        width: auto;
+        position: relative;
+        height: auto;
+        float: none;
+        padding: 0;
+        margin: 0;
+        border-radius: unset;
+    }
+    header{
+        margin-top: 60px;
+    }
+    .Eerste{
+        border-radius: unset;
+        border-top-left-radius: unset;
+    }
+    li{
+        float: left;
+    }
+    ul img{
+;        display: none;
+    }
+    ul li a span{
+        display: unset;
+    }
+    .laastenav{
+        position: absolute;
+        right: 0
+    }
+    @media screen and (max-width: 1200px) {
+        input{
+            display: none;
+        }
+        li{
+            float: none;
+            text-align: center;
+        }
+        figcaption{
+            display: none;
+        }
+        .nummer1 img{
+            width: 100%;
+            aspect-ratio: 400 / 225;
+            object-fit:cover;
+        }
+        .nummer3, .nummer1,.nummer2, .laaste{
+            width: 33%;
+            margin: 0;
+        }
+         p{
+            line-height:1em;
+            height:3em;
+        }
+    }
+    @media screen and (max-width: 900px) {{
+    }
+        .nummer3, .nummer1,.nummer2, .laaste{
+            width: 100%;
+        }
+        .nummer3, .nummer1,.nummer2, .laaste p{
+            display: none;
+        }
+
+    }
+}

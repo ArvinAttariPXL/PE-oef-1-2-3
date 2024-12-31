@@ -1,0 +1,47 @@
+/* 
+    naam:
+*/
+
+
+/*
+    blauw = #4D6D8F;
+    geel =  #FEFF63;
+*/
+table{
+    width: 600px;
+    border: 5px black solid;
+    border-collapse: collapse;
+}
+img{
+    border: 3px solid grey;
+    width: 180px;
+    height: auto;
+    border-radius: 10rem;
+}
+thead, th{
+    background-color: #4D6D8F;
+    color: white;
+    border: 2px black solid;
+}
+th{
+    text-decoration: underline;
+
+}
+thead tr td{
+    background-color: #4D6D8F;
+}
+thead{
+    font-family: monospace;
+}
+tr:nth-child(odd){
+    background-color: #FEFF63;
+}
+tbody td{
+    border-bottom: black 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+
+

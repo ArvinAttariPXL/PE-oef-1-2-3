@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- naam:              -->
+<head>
+    <meta charset="UTF-8">
+    <title>Oef3</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/oef3.css">
+</head>
+<body>
+<h1>Mussen vs Vinken</h1>
+<form  method="get" action="waarneming.html">
+    <fieldset>
+        <legend>Algemeen</legend>
+        <section class="form-box">
+            <label for="datum">Datum: </label>
+            <input type="date" id="datum" name="datum"  value="yyyy-mm-dd" >
+        </section>
+        <section class="form-box">
+            <label for="tijd">Tijd: </label>
+            <select name="tijd" id="tijd">
+                <option value="0_6">0u - 6u</option>
+                <option value="6_12">6u - 12u</option>
+                <option value="12_18">12u - 18u</option>
+                <option value="18_24">18u - 24u</option>
+            </select>
+        </section>
+        <section class="form-box">
+            <label >Neerslag: </label>
+
+            <input type="radio" name="neerslag" id="geen" value="geen">
+            <label for="geen">geen</label>
+
+            <input type="radio" name="neerslag" id="matig" value="matig">
+            <label for="matig">matig</label>
+            <input type="radio" name="neersalg" id="overvloedig" value="overvloedig">
+            <label for="overvloedig">overvloedig</label>
+        </section>
+
+    </fieldset>
+    <fieldset>
+        <legend>Vogels</legend>
+            <div class="volgels">
+                <img src="assets/images/mus.png" height="350" width="473"/>
+                <label for="aantal_mus">#Mussen:</label>
+                <input name="aantal_mus" type="number" id="aantal_mus"  min="0" max="10" placeholder="0">
+                <label for="zekerheid_mus">Zeker</label>
+                <input name="zekerheid_mus" type="range" id="zekerheid_mus"  min="0" max="100" >
+
+            </div>
+            <div class="volgels">
+                <img src="assets/images/vink.png" height="361" width="523"/>
+                <label for="aantal_vink">#Vinken:</label>
+                <input name="aantal_vink" type="number" id="aantal_vink"  min="0" max="10" placeholder="0">
+                <label for="zekerheid_vink">Zeker</label>
+                <input name="zekerheid_vink" type="range" id="zekerheid_vink"  min="0" max="100" >
+            </div>
+
+            <div>
+
+
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>Acties</legend>
+        <input class="knoppen"  name="submit" type="submit" value="registreer">
+        <input class="knoppen" id="leegmaken" type="reset" value="maak leeg">
+    </fieldset>
+</form>
+</body>
+</html>

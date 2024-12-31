@@ -1,0 +1,40 @@
+/* naam: 
+
+*/
+form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}
+.form-box{
+    padding: 10px;
+ }
+legend{
+    border: black 1px solid;
+}
+label{
+    font-weight: bold;
+}
+label{
+    padding:10px ;
+}
+img{
+    border: 3px solid grey;
+    width: 100px;
+    height: auto;
+    border-radius: 100rem;
+
+}
+
+fieldset{
+    margin: 20px;
+}
+.knoppen{
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-right: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+}
